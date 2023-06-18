@@ -1,0 +1,38 @@
+{
+  "name": "mernecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Kirill",
+  "license": "ISC",
+  "dependencies": {
+    "@paypal/react-paypal-js": "^8.0.0",
+    "bcrypt": "^5.1.0",
+    "braintree": "^3.15.0",
+    "colors": "^1.4.0",
+    "concurrently": "^8.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "http-proxy-middleware": "^2.0.6",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "react-content-loader": "^6.2.1",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-router-dom": "^6.11.0",
+    "react-stripe-elements": "^6.1.2",
+    "slugify": "^1.6.6",
+    "stripe": "^12.6.0"
+  }
+}
